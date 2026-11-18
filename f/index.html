@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>A shared folder on Bulletn</title>
+<meta name="description" content="Tap to see the whole folder, then add it to Bulletn in one tap.">
+<link rel="canonical" href="https://devonlambert03.github.io/bulletn/f/">
+<meta name="apple-itunes-app" content="app-id=6829573401">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bulletn">
+<meta property="og:title" content="A shared folder on Bulletn">
+<meta property="og:description" content="Tap to see the whole folder, then add it to Bulletn in one tap.">
+<meta property="og:url" content="https://devonlambert03.github.io/bulletn/f/">
+<meta property="og:image" content="https://devonlambert03.github.io/bulletn/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFF6EC">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../styles.css">
+<script src="folder.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="../assets/logo.svg" alt="" width="24" height="26">bulletn</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../guides/">Guides</a>
+      <a class="btn btn-sm" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">App Store</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article share">
+  <div class="narrow">
+    <noscript>
+      <div class="card share-msg">
+        <span class="label">Shared folder</span>
+        <h1>Turn on JavaScript to see this folder</h1>
+        <p>This page opens the shared folder right in your browser, which needs JavaScript. Turn it on in Safari settings and reload, or get Bulletn and open the link again.</p>
+        <a class="btn" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn on the App Store</a>
+      </div>
+    </noscript>
+
+    <section id="folder" hidden>
+      <span class="label">Shared folder</span>
+      <h1 id="folder-name"></h1>
+      <p id="folder-count" class="share-count"></p>
+      <div class="share-actions">
+        <a id="open-in-app" class="btn" href="../">Open in Bulletn</a>
+        <a class="btn btn-alt" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn</a>
+      </div>
+      <span class="btn-note">Don't have Bulletn? Get it free, then tap Open in Bulletn.</span>
+      <ul id="folder-items" class="share-list"></ul>
+    </section>
+
+    <section id="folder-error" class="card share-msg" hidden>
+      <span class="label">Shared folder</span>
+      <h1>This shared folder could not be opened</h1>
+      <p>The link may be incomplete or damaged. Ask the person who sent it to share the folder again.</p>
+      <a class="btn" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn on the App Store</a>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../#support">Support</a>
+      <a href="../guides/">Guides</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../terms.html">Terms</a>
+      <a href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">App Store</a>
+    </nav>
+    <p>Bulletn is not affiliated with TikTok, Instagram, YouTube or Facebook.</p>
+    <p>&copy; 2026 Bulletn</p>
+  </div>
+</footer>
+</body>
+</html>
