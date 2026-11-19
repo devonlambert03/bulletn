@@ -107,6 +107,26 @@
     return node;
   }
 
+  // If Bulletn is not installed (or is too old to know folder links), the
+  // page is still visible after a moment, so send the person to the App Store.
+  var APP_STORE_URL = "https://apps.apple.com/app/bulletn-saved-sorted/id6829573401";
+
+  function openWithFallback(event) {
+    event.preventDefault();
+    var link = event.currentTarget.href;
+    var left = false;
+    function onHide() { if (document.hidden) left = true; }
+    function onPageHide() { left = true; }
+    document.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", onPageHide);
+    window.location.href = link;
+    setTimeout(function () {
+      document.removeEventListener("visibilitychange", onHide);
+      window.removeEventListener("pagehide", onPageHide);
+      if (!left && !document.hidden) window.location.href = APP_STORE_URL;
+    }, 1500);
+  }
+
   function showError() {
     document.getElementById("folder").hidden = true;
     document.getElementById("folder-error").hidden = false;
@@ -116,7 +136,9 @@
     document.getElementById("folder-name").textContent = folder.name;
     var n = folder.items.length;
     document.getElementById("folder-count").textContent = n + (n === 1 ? " save" : " saves");
-    document.getElementById("open-in-app").href = "bulletn://import#" + payload;
+    var openBtn = document.getElementById("open-in-app");
+    openBtn.href = "bulletn://import#" + payload;
+    openBtn.onclick = openWithFallback;
 
     var list = document.getElementById("folder-items");
     list.replaceChildren();
