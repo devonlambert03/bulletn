@@ -14,11 +14,11 @@
 <meta property="og:url" content="https://devonlambert03.github.io/bulletn/">
 <meta property="og:image" content="https://devonlambert03.github.io/bulletn/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFF6EC">
+<meta name="theme-color" content="#0E1015">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/Outfit-Variable.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,120 +34,383 @@
 </script>
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="logo" href="./"><img src="assets/logo.svg" alt="" width="24" height="26">bulletn</a>
-    <nav class="nav" aria-label="Main">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="22" height="24">Bulletn</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
       <a href="guides/">Guides</a>
-      <a class="btn btn-sm" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">App Store</a>
+      <a href="#faq">FAQ</a>
     </nav>
+    <a class="btn btn-gold btn-sm" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download</a>
   </div>
 </header>
 
-<main>
+<main id="main">
+
+  <!-- Hero -->
   <section class="hero">
-    <div class="wrap">
-      <div>
-        <span class="label">Bulletn: Saved &amp; Sorted</span>
-        <h1>Your saved TikToks, Reels and YouTube videos, sorted in one place.</h1>
-        <p class="lede">Tap Share in any app and pick Bulletn. It files each save into the right folder, so you can find it when you need it.</p>
-        <a class="btn" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn on the App Store</a>
-        <span class="btn-note">For iPhone. Your first 10 saves are free.</span>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <h1>Find every video you saved.</h1>
+        <p class="lede">Bulletn saves links from TikTok, Instagram, YouTube, Facebook and anywhere else, then sorts them into folders for you. Stop scrolling through your saves. Start using them.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download free</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <p class="fine">Free to download. iPhone only.</p>
       </div>
-      <div class="shot">
-        <img src="assets/img/screen-01.jpg" width="660" height="1434" fetchpriority="high" alt="Bulletn home screen with photo-covered folders for Recipes, Fitness, Kid Activities and Travel, a search bar and an Unsorted tray.">
+      <div class="phones phones-hero">
+        <div class="phone"><img src="assets/img/home-home.jpg" width="640" height="1390" fetchpriority="high" alt="Bulletn home screen with photo-covered folders for Recipes, Fitness, Kid Activities and Travel, a search bar and an Unsorted tray holding 3 links."></div>
+        <div class="phone phone-back"><img src="assets/img/home-share.jpg" width="640" height="1390" alt="The Bulletn share sheet saving a recipe called Slow Cooker Beef Ragu from Instagram, with Auto-sort and Remind me options and a Save button."></div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Feature strip -->
+  <section class="strip" id="features" aria-label="Highlights">
     <div class="wrap">
-      <div class="section-head">
-        <span class="label">How it works</span>
-        <h2>Save once. Find it later.</h2>
-      </div>
-      <div class="features">
-        <div class="card">
-          <h3>Save from any app</h3>
-          <p>In TikTok, Instagram, YouTube, Facebook or any app with a Share button, tap Share and pick Bulletn. The link is saved.</p>
-        </div>
-        <div class="card">
-          <h3>Sorted for you</h3>
-          <p>AI Auto-sort files each save into the right folder, like Recipes, Fitness, Kid Activities or Travel.</p>
-        </div>
-        <div class="card">
-          <h3>One tap when it's unsure</h3>
-          <p>If Bulletn is not sure, the link waits in Unsorted with one suggested folder. Tap once to file it.</p>
-        </div>
-        <div class="card">
-          <h3>Find it again</h3>
-          <p>Search across all your saves. Set a reminder on a save so the recipe or workout comes back when you want it.</p>
-        </div>
-      </div>
-
-      <div class="showcase">
-        <figure>
-          <div class="shot"><img src="assets/img/screen-03.jpg" width="660" height="1434" loading="lazy" alt="A Recipes folder in Bulletn holding videos from Instagram, TikTok and YouTube, with labels reading Filed 3 to Recipes and Filed to Fitness."></div>
-          <figcaption>Saves from every app land in the same folder.</figcaption>
-        </figure>
-        <figure>
-          <div class="shot"><img src="assets/img/screen-04.jpg" width="660" height="1434" loading="lazy" alt="The Unsorted folder in Bulletn showing three links, each with one suggested folder button such as Move to Fitness."></div>
-          <figcaption>Not sure? Bulletn suggests, you tap.</figcaption>
-        </figure>
-      </div>
-
-      <ul class="extras" aria-label="Also included">
-        <li>Undo after moves, deletes and filing</li>
-        <li>Select many to move or delete</li>
-        <li>Photo covers on folders</li>
+      <ul class="strip-list">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+          <span>Works from any Share button</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+          <span>Sorts itself with AI</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+          <span>Share a whole folder in one link</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>No account, no ads</span>
+        </li>
       </ul>
     </div>
   </section>
 
-  <section class="section story">
+  <!-- Stats -->
+  <section class="section stats-sec">
     <div class="wrap">
-      <span class="label">Why Bulletn exists</span>
-      <blockquote>
-        <p>I built Bulletn to keep track of the workout videos I saved. My wife ended up using it more, for recipes, homeschool ideas and everything else she saves.</p>
-        <cite>Devon, maker of Bulletn</cite>
-      </blockquote>
+      <h2 class="center">Built for people who save a lot</h2>
+      <dl class="stats">
+        <div><dt>1 tap</dt><dd>to save from any app</dd></div>
+        <div><dt>Auto</dt><dd>sorted into folders</dd></div>
+        <div><dt>1 link</dt><dd>to share a whole folder</dd></div>
+        <div><dt>0 ads</dt><dd>ever</dd></div>
+      </dl>
     </div>
   </section>
 
-  <section class="section cta">
-    <div class="narrow">
-      <h2>Stop losing the good stuff.</h2>
-      <p>Your first 10 saves are free. Bulletn Pro is weekly, monthly or yearly, at the prices shown in the app.</p>
-      <a class="btn" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn on the App Store</a>
+  <!-- Feature row: save from anywhere -->
+  <section class="section">
+    <div class="wrap row">
+      <div class="row-copy">
+        <p class="eyebrow">Save from anywhere</p>
+        <h2>One tap from any app</h2>
+        <p>In TikTok, Instagram, YouTube, Facebook, Pinterest, Safari or any app with a Share button, tap Share and pick Bulletn. Add a note if you like, pick a folder or let Bulletn sort it for you.</p>
+        <ul class="ticks">
+          <li>Works with any app that has a Share button</li>
+          <li>Add a note or a reminder as you save</li>
+          <li>Pick a folder yourself or let it sort</li>
+        </ul>
+        <a class="btn btn-gold" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download free</a>
+      </div>
+      <div class="phones">
+        <div class="phone"><img src="assets/img/home-share.jpg" width="640" height="1390" loading="lazy" alt="Saving a link with the Bulletn share sheet: the title Slow Cooker Beef Ragu from Instagram, with Auto-sort and Remind me rows."></div>
+        <div class="phone phone-back"><img src="assets/img/home-detail.jpg" width="640" height="1390" loading="lazy" alt="A saved recipe in Bulletn with its photo, an Open button, the source Instagram, the folder Recipes, a note field and a reminder set for Friday."></div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="support">
+  <!-- Privacy accent card -->
+  <section class="section">
     <div class="wrap">
-      <div class="info">
-        <div class="card">
-          <h2>Support</h2>
-          <p>Questions or problems: <a href="mailto:get.bulletn@outlook.com">get.bulletn@outlook.com</a></p>
-          <p><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a></p>
+      <div class="accent-card privacy">
+        <div class="privacy-copy">
+          <p class="eyebrow eyebrow-dark">Privacy</p>
+          <h2>Your saves stay yours.</h2>
+          <p>Bulletn has no accounts, no ads, no analytics and no tracking. Your saved links, notes and folders are stored on your iPhone.</p>
+          <ul class="ticks ticks-dark">
+            <li>Nothing to sign up for</li>
+            <li>Saves are stored only on your iPhone</li>
+            <li>AI sorting can be turned off any time in Settings</li>
+          </ul>
+          <a class="link-dark" href="privacy.html">Read the privacy policy</a>
         </div>
-        <div class="card" id="subscriptions">
-          <h2>Subscriptions</h2>
-          <p>Bulletn Pro renews automatically. Manage or cancel it any time in the Settings app under your name, then Subscriptions. To restore a purchase on a new iPhone, open Bulletn, then Settings, then Restore Purchases.</p>
+        <div class="mini-grid">
+          <div class="mini">
+            <h3>No account</h3>
+            <p>No sign up, no email, no password.</p>
+          </div>
+          <div class="mini">
+            <h3>No ads or tracking</h3>
+            <p>No ads, no analytics and no tracking in the app.</p>
+          </div>
+          <div class="mini">
+            <h3>AI sorting asks first</h3>
+            <p>It asks before sorting and the server does not store your link.</p>
+          </div>
+          <div class="mini">
+            <h3>Shared folders stay in the link</h3>
+            <p>The folder travels inside the link. Nothing is uploaded.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Feature row: smart sorting -->
+  <section class="section">
+    <div class="wrap row row-flip">
+      <div class="row-copy">
+        <p class="eyebrow">Smart sorting</p>
+        <h2>It files itself.</h2>
+        <p>Bulletn's AI reads the title, caption and link and puts each save in the folder that fits. When nothing fits, it suggests a new one. You can always move it.</p>
+        <ul class="ticks">
+          <li>Saves land in folders like Recipes, Fitness or Travel</li>
+          <li>Not sure? It waits in Unsorted with one suggested folder</li>
+          <li>Move any save yourself, any time</li>
+        </ul>
+        <a class="btn btn-gold" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download free</a>
+      </div>
+      <div class="phones">
+        <div class="phone"><img src="assets/img/home-unsorted.jpg" width="640" height="1390" loading="lazy" alt="The Unsorted folder in Bulletn with three links, each with one suggested folder button such as Move to Fitness and Move to Recipes."></div>
+        <div class="phone phone-back"><img src="assets/img/home-folder.jpg" width="640" height="1390" loading="lazy" alt="A Recipes folder in Bulletn holding six links from Instagram, TikTok and YouTube, with filters for each app."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">How it works</p>
+        <h2>From scroll to sorted</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <div class="phone"><img src="assets/img/home-share.jpg" width="640" height="1390" loading="lazy" alt="Step 1: the Bulletn share sheet saving a link from Instagram."></div>
+          <h3>Save</h3>
+          <p>Tap Share, pick Bulletn.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/img/home-folder.jpg" width="640" height="1390" loading="lazy" alt="Step 2: the saved link sorted into the Recipes folder alongside other recipes."></div>
+          <h3>Sort</h3>
+          <p>It lands in the right folder.</p>
+        </li>
+        <li>
+          <div class="phone"><img src="assets/img/home-search.jpg" width="640" height="1390" loading="lazy" alt="Step 3: searching Bulletn for beach finds a saved Instagram video called Hidden Beaches."></div>
+          <h3>Find</h3>
+          <p>Search or open the folder when you need it.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <p class="pill">Everything in one place</p>
+        <h2>Everything your saved folder should have been</h2>
+        <p class="sub">One clean app. No feeds, no ads, no clutter.</p>
+      </div>
+      <div class="grid3">
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/></svg></span>
+          <h3>Auto-sort</h3>
+          <p>AI files each new save into the folder that fits.</p>
+        </div>
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="16" cy="9" r="1.5"/></svg></span>
+          <h3>Folders with covers</h3>
+          <p>Photo covers make every folder easy to spot.</p>
+        </div>
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span>
+          <h3>Search everything</h3>
+          <p>Search across all your saves from every app.</p>
+        </div>
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+          <h3>Notes on any save</h3>
+          <p>Add a note so you remember why you saved it.</p>
+        </div>
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg></span>
+          <h3>Reminders</h3>
+          <p>Set a reminder so a recipe or workout comes back when you want it.</p>
+        </div>
+        <div class="card">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span>
+          <h3>Share a folder</h3>
+          <p>Send a whole folder to a friend in one link.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <h2>Stop losing your saves</h2>
+        <p class="sub">Quick guides for the apps you already use.</p>
+      </div>
+      <div class="grid4">
+        <a class="card card-link" href="guides/organize-saved-tiktoks.html">
+          <h3>How to organize your saved TikToks</h3>
+          <p>Find your saved TikToks in Favorites and sort them into collections.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="card card-link" href="guides/find-saved-instagram-posts.html">
+          <h3>How to find your saved Instagram posts and reels</h3>
+          <p>Where Instagram keeps your saved posts on iPhone, and how to sort them.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="card card-link" href="guides/save-recipes-from-tiktok-and-instagram.html">
+          <h3>How to save recipes from TikTok and Instagram in one place</h3>
+          <p>Simple ways to keep recipes together and find them at dinner time.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="card card-link" href="guides/apps-to-organize-saved-videos.html">
+          <h3>Apps to organize saved social media videos</h3>
+          <p>What to look for in an app that organizes your saved videos.</p>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="head">
+        <h2>Simple pricing.</h2>
+        <p class="sub">Start free. Upgrade when you are ready. Cancel any time in Settings.</p>
+      </div>
+      <div class="prices">
+        <div class="price">
+          <h3>Free</h3>
+          <p class="amount">$0</p>
+          <ul class="ticks">
+            <li>10 free saves</li>
+            <li>All features</li>
+            <li>AI sorting</li>
+            <li>Share folders</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download free</a>
+        </div>
+        <div class="price price-hot">
+          <p class="badge">Most popular</p>
+          <h3>Pro Monthly</h3>
+          <p class="amount">$2.99<span>/month</span></p>
+          <ul class="ticks ticks-dark">
+            <li>Unlimited saves</li>
+            <li>Everything in Free</li>
+          </ul>
+          <a class="btn btn-dark btn-block" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn Pro</a>
+        </div>
+        <div class="price">
+          <p class="badge badge-soft">Best value</p>
+          <h3>Pro Yearly</h3>
+          <p class="amount">$14.99<span>/year</span></p>
+          <ul class="ticks">
+            <li>Unlimited saves</li>
+            <li>Everything in Free</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Get Bulletn Pro</a>
+        </div>
+      </div>
+      <p class="fine center price-note">Or $0.99 a week. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="accent-card cta">
+        <h2>Stop losing what you save.</h2>
+        <p>Free to download. No account needed.</p>
+        <a class="btn btn-white" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download on the App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap narrow">
+      <h2 class="center">Common questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Is Bulletn free?</summary>
+          <p>Bulletn is free to download and new installs get 10 free saves. Bulletn Pro unlocks unlimited saves for $0.99 a week, $2.99 a month or $14.99 a year.</p>
+        </details>
+        <details>
+          <summary>Which apps does it work with?</summary>
+          <p>Any app with a Share button, including TikTok, Instagram, YouTube, Facebook, Pinterest and Safari. Tap Share and pick Bulletn.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. There is nothing to sign up for.</p>
+        </details>
+        <details>
+          <summary>Is my data private?</summary>
+          <p>Yes. Your saves stay on your iPhone. Bulletn has no ads, no analytics and no tracking. AI sorting asks for your consent first, can be turned off in Settings, and the server does not store your link. <a href="privacy.html">Read the privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>Can I share a folder with someone who does not have Bulletn?</summary>
+          <p>Yes. The link opens a web page listing the folder. If they have Bulletn installed, they can add it in one tap.</p>
+        </details>
+        <details>
+          <summary>Can I cancel anytime?</summary>
+          <p>Yes. Bulletn Pro renews automatically. Cancel any time in the Settings app under your name, then Subscriptions, at least 24 hours before the period ends.</p>
+        </details>
+        <details>
+          <summary>Is there an Android version?</summary>
+          <p>Not yet. Bulletn is iPhone only.</p>
+        </details>
+      </div>
+      <p class="center more" id="support">More questions? Email <a href="mailto:get.bulletn@outlook.com">get.bulletn@outlook.com</a></p>
+    </div>
+  </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <nav class="footer-links" aria-label="Footer">
-      <a href="#support">Support</a>
-      <a href="guides/">Guides</a>
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="22" height="24">Bulletn</a>
+      <p>Save links from any app. Bulletn sorts them into folders for you.</p>
+      <a class="btn btn-gold btn-sm" href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download on the App Store</a>
+    </div>
+    <nav aria-label="Product">
+      <h2>Product</h2>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">Download</a>
+    </nav>
+    <nav aria-label="Guides">
+      <h2>Guides</h2>
+      <a href="guides/organize-saved-tiktoks.html">Organize saved TikToks</a>
+      <a href="guides/find-saved-instagram-posts.html">Find saved Instagram posts</a>
+      <a href="guides/save-recipes-from-tiktok-and-instagram.html">Save recipes in one place</a>
+      <a href="guides/apps-to-organize-saved-videos.html">Apps to organize saved videos</a>
+    </nav>
+    <nav aria-label="Legal">
+      <h2>Legal</h2>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
-      <a href="https://apps.apple.com/app/bulletn-saved-sorted/id6829573401">App Store</a>
+      <a href="mailto:get.bulletn@outlook.com">Support</a>
     </nav>
+  </div>
+  <div class="wrap foot-base">
     <p>Bulletn is not affiliated with TikTok, Instagram, YouTube or Facebook.</p>
     <p>&copy; 2026 Bulletn</p>
   </div>
