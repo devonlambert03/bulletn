@@ -52,7 +52,7 @@ h1 span{display:block}
 
 /* Phone frame, drawn in CSS and sized from --w */
 .phone{position:relative;width:var(--w);margin:0 auto;padding:calc(var(--w)*.034);border-radius:calc(var(--w)*.172);background:#0b0b0c;box-shadow:inset 0 0 0 calc(var(--w)*.007) #57575b,inset 0 0 0 calc(var(--w)*.014) #1b1b1d,0 calc(var(--w)*.07) calc(var(--w)*.2) rgba(60,30,0,.22)}
-.phone::before{content:"";position:absolute;z-index:1;top:calc(var(--w)*.06);left:50%;width:29%;height:calc(var(--w)*.082);transform:translateX(-50%);border-radius:999px;background:#000}
+.phone::before{content:"";position:absolute;z-index:1;top:calc(var(--w)*.067);left:50%;width:20%;height:calc(var(--w)*.066);transform:translateX(-50%);border-radius:999px;background:#000}
 .phone img{width:100%;border-radius:calc(var(--w)*.139)}
 
 /* Statement */
@@ -66,7 +66,7 @@ h1 span{display:block}
 .card h2{font-size:clamp(40px,6.4vw,64px)}
 .lead{text-wrap:balance;margin-top:18px;max-width:30em;font-size:clamp(21px,2.6vw,26px);font-weight:600;line-height:1.28;letter-spacing:-.014em;color:var(--muted)}
 .lead strong{color:var(--ink);font-weight:600}
-.card-type,.card-color{min-height:clamp(440px,52vw,520px)}
+.card-color{min-height:clamp(440px,52vw,520px)}
 
 /* Card detail, opened by the + button */
 .more{display:grid;grid-template-rows:1fr;transition:grid-template-rows .45s var(--ease)}
@@ -91,13 +91,12 @@ h1 span{display:block}
 .card-phone .more{margin:0 calc(clamp(28px,6vw,64px)*-1)}
 .card-phone .more p{padding:28px 88px 34px clamp(28px,6vw,64px)}
 .card-phone .more>div{border-top:1px solid #e8e8ed;background:#fff}
-.js .card-phone:not(.open) .more>div{border-top-color:transparent}
+.js .card-phone:not(.open) .more>div{border-top-width:0}
 
 /* Giant type */
 .card-type h2{font-size:clamp(58px,11.4vw,104px);letter-spacing:-.035em;line-height:1}
 .card-type h2 span{display:block}
 .grad{background:linear-gradient(100deg,#E5A021 0%,#EC7F35 52%,#EB5B4B 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.14em;margin-bottom:-.1em}
-.card-type .more{margin-top:auto}
 
 /* Color cards */
 .card-color{color:#fff;padding-bottom:80px}
@@ -109,6 +108,9 @@ h1 span{display:block}
 .disc svg{width:36px;height:36px;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .warm .disc svg{stroke:#DA6120}
 .cool .disc svg{stroke:#1A74A6}
+.card-color.card-phone{padding-bottom:0}
+.card-color .phone{box-shadow:inset 0 0 0 calc(var(--w)*.007) #57575b,inset 0 0 0 calc(var(--w)*.014) #1b1b1d,0 calc(var(--w)*.07) calc(var(--w)*.2) rgba(4,24,60,.4)}
+.card-color.card-phone .more>div{border-top-color:rgba(255,255,255,.28);background:rgba(8,28,84,.22)}
 
 /* Facts */
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:32px 40px;margin-top:36px}
