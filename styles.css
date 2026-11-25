@@ -154,3 +154,6 @@ p{margin:0 0 1em}
 .site-footer p{margin:0 0 6px}
 
 @media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}}
+
+/* Lockup: the app's BrandHeader as one SVG, same as the home page */
+.logo .lockup-svg{display:block;height:28px;width:auto;color:var(--fg)}
