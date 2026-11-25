@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devonlambert03.github.io/bulletn/sitemap.xml
+Sitemap: https://bulletnapp.com/sitemap.xml
